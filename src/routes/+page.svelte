@@ -122,7 +122,7 @@
             <!--  -->
             <div class="font-semibold text-slate-700">Execution timeline</div>
             <Timeline />
-            <Button disabled={workflow.status === "running"} onclick={runWorkflow} class="bg-[{config.company.color}] cursor-pointer z-50 flex gap-2">
+            <Button disabled={workflow.status === "running"} onclick={runWorkflow} class="bg-[#021535] cursor-pointer z-50 flex gap-2">
                 {#if workflow.status === "running"}
                     <Loader2Icon class="animate-spin" />
                     Running...
