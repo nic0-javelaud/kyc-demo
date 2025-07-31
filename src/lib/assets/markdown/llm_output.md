@@ -1,0 +1,11 @@
+# KYC Risk Profile Assessment
+
+## Customer Profile\n\n- **Name:** Renee Maria Montoya\n\n- **Date of Birth:** 01-01-1968\n\n- **Address:** 321 Gotham Avenue, Trenton, NJ 08666 (Warning: Address has changed since last update)\n\n- **Phone:** 201 467 3812\n\n- **Email:** r.m.montoya@gmail.com\n\n- **ID:** M6454 64774 51685\n\n- **Account Number:** 5515 6792 13\n\n- **Gender:** F\n\n- **Height:** 5' - 08"\n\n- **Nationality:** American\n\n- **Marital Status:** Married\n\n- **Occupation:** Teacher\n\n\n\n## Validation Rules\n\n\n\n| Rule | Status |\n\n|------|--------|\n\n| Identification Document Type | Accepted (Driver's License) |\n\n| Customer is over 18 | Passed (Date of Birth: 01-01-1968) |\n\n| Identification Document is expired | Expired (Expiration date: 01-01-2023) |\n\n| Name consistent across documents | Consistent (Renee Maria Montoya) |\n\n| Authorization Document is signed | Signed |\n\n| Identification number matches | Matches (ID detected: M6454 64774 51685) |\n\n| Account number is valid | Valid (Account number: 5515 6792 13) |\n\n| Proof of address Document legitimacy | Legitimate |\n\n| Proof of address Document type | Accepted (Energy bill) |\n\n| Proof of address Date | Recent (Date: 02/20/2024) |\n\n| Address is valid | Valid |\n\n\n\n## Risk Profile Assessment\n\n\n\n### Low Risk Indicators\n\n- Age verification passed.\n\n- Name consistency across documents.\n\n- Authorization document is signed.\n\n- Identification number matches.\n\n- Account number is valid.\n\n- Proof of address document is legitimate and recent.\n\n- Address is valid.\n\n\n\n### Medium Risk Indicators\n\n- Address has changed since the last update.\n\n- Identification document is expired.\n\n\n\n### High Risk Indicators\n\n- None identified.
+
+## Tier Risk: Medium
+
+## Recommendations for Next Steps
+
+1. **Address Verification**: Confirm the new address with additional documentation or a verification process to ensure it is legitimate and belongs to the customer.
+2. **Document Renewal**: Request an updated identification document that is not expired to ensure the validity of the identification.
+3. **Monitoring**: Keep an eye on any transactions or activities linked to the account to ensure they align with the customer's profile and history.

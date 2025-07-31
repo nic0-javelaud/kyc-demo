@@ -1,0 +1,36 @@
+{    
+    "rules": [
+        {
+            "name": "Document is signed",
+            "proof": {
+                "label": "Signature detected",
+                "value": "True"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Identification number matches ID provided",
+            "proof": {
+                "label": "ID detected",
+                "value": "M6454 64774 51685 | M6454 64774 51685"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Account number is valid",
+            "proof": {
+                "label": "Account number",
+                "value": "5515 6792 13"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Name consistent accross documents",
+            "proof": {
+                "label": "Name",
+                "value": "Renee Maria Montoya | Renee Maria Montoya | Renee Maria Montoya"
+            },
+            "status": "pass"
+        }
+    ]
+}

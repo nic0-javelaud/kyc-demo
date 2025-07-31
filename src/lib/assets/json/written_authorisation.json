@@ -1,0 +1,20 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "Renee Montoya\n321 Gotham Avenue\nTrenton, NJ 08666\nr.m.montoya@gmail.com\n201 467 3812\n\nSubject: Client Instruction Letter for Investment Transaction\n\nDear Sir/Madam,\n\nI, Renee Marin Montoya, holding a valid identification document (e.g., Driver's License) with the number M6454 64774 51685, hereby provide the following instructions for the management of my investment portfolio:\n\nInstruction Details:\n\n- Account Number: 5515 6792 13\n- Transaction Type: BUY\n- Security/Instrument: GS5Y USAX\n- Quantity: 2,000\n- Price Limit (if applicable): 56.88\n- Settlement Date: 11/21/25\n\nI authorize your services to execute the above transaction on my behalf as per the details provided. Please ensure that all necessary checks and validations are performed before executing the transaction.\n\nAdditional Instructions:\n\nPlease ensure that the transaction is completed by Nov 21st to take advantage of the current market conditions.\n\nThank you for your assistance. Should you require any further information or clarification, please do not hesitate to contact me.\n\nYours faithfully,\n\n[Signature]",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2339,
+                "width": 1656
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "document_annotation": "{\n  \"name\": \"Renee Maria Montoya\",\n  \"address\": \"321 Gotham Avenue, Trenton, NJ 08666\",\n  \"email\": \"r.m.montoya@gmail.com\",\n  \"phone\": \"201 467 3812\",\n  \"driver_license_id\": \"M6454 64774 51685\",\n  \"account_number\": \"5515 6792 13\",\n  \"transaction_type\": \"BUY\",\n  \"security\": \"GS5YUSAX\",\n  \"quantity\": 2000,\n  \"price_limit\": \"56.88\",\n  \"settlement_date\": \"11/21/25\",\n  \"additional_instructions\": \"Please ensure that the transaction is completed by Nov 21st to take advantage of the current market conditions.\",\n  \"signature_present\": true\n}",
+    "usage_info": {
+        "pages_processed": 1,
+        "doc_size_bytes": 65890
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "rules": [
+        {
+            "name": "Document type accepted",
+            "proof": {
+                "label": "Document type",
+                "value": "driver license"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Customer is over 18",
+            "proof": {
+                "label": "Date of Birth",
+                "value": "01-01-1968"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Document is expired",
+            "proof": {
+                "label": "Expiration date",
+                "value": "01-01-2023"
+            },
+            "status": "warning",
+            "message": "Document has expired on 01-01-2023. Ask to provide a new document."
+        },
+        {
+            "name": "Name consistent accross documents",
+            "proof": {
+                "label": "Name",
+                "value": "Renee Maria Montoya | Renee Maria Montoya | Renee Maria Montoya"
+            },
+            "status": "pass"
+        }
+    ]
+}

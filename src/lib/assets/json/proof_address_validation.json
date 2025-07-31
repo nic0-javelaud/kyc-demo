@@ -1,0 +1,44 @@
+{
+    "rules": [
+        {
+            "name": "Document type accepted",
+            "proof": {
+                "label": "Document type",
+                "value": "Energy bill"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Date is less than 24 months",
+            "proof": {
+                "label": "Date",
+                "value": "02/20/2024"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Document appears legitimate",
+            "proof": {
+                "label": "Document legitimacy assesment",
+                "value": "True"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Address is valid",
+            "proof": {
+                "label": "Adderess provided",
+                "value": "321 Gotham Avenue, Trenton, NJ 08666"
+            },
+            "status": "pass"
+        },
+        {
+            "name": "Name consistent accross documents",
+            "proof": {
+                "label": "Name",
+                "value": "Renee Maria Montoya | Renee Maria Montoya | Renee Maria Montoya"
+            },
+            "status": "pass"
+        }
+    ]
+}

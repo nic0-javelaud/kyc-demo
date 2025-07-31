@@ -1,0 +1,20 @@
+{
+    "pages": [
+        {
+            "index": 0,
+            "markdown": "# CONEDISON\n\nPO BOX 4120 NEW YORK, NY 10003\n\nPage 1 of 2\n\nRenee Maria Montoya Account Number: 60-4213-9784-0147-2\n\n|  Your bill breakdown | $  |\n| --- | --- |\n|  Last billing period |   |\n|  Your billing summary as of Jan 03, 2024 |   |\n|  Your previous charges and payments Total |   |\n|  charges from your last bill Payments through | $134.70  |\n|  Jan 18, thank you | -$134.70  |\n|  Balance from previous bill | None  |\n|  Your new charges |   |\n|  Billing period: Jan 05, 2024 to Feb 06, 2024 |   |\n|  Level payment amount Adjustments | $160.65  |\n|   | -$10.00  |\n|  Total from this billing period | $150.65  |\n|  Total amount due | $150.65  |\n\n|  Current balance due | $150.65  |\n| --- | --- |\n|  |   |\n\nService delivered to: 321 Gotham Avenue, Trenton, NJ 08666 Next billing date: Tuesday, March 05, 2024\n\n|  Your average daily electric usage |  |  |   |\n| --- | --- | --- | --- |\n|  |   |   |   |\n|  27.91 | 38.00 |  | 75  |\n|  12.5 |  |  | 50  |\n|  6.25 |  |  | 25  |\n|  0 |  | Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan |   |\n\nMessages For You\n\n☑ As New Yorkers face the challenges presented by the coronavirus, Con Edison is suspending electric and gas shutoffs for customers having payment difficulties. If there is a turn-off notice on this bill, no action will be taken to disconnect your service. We're here to help - visit conEd.com for payment arrangement options or call us at 1-800-752-6633. Residential customers may be able to get help in paying their utility bills by contacting the NYC Human Resources Administration (HRA) at 1-800-692-0557 or the Westchester Department of Social Services (DSS) at a 1-914-995-3333.\n\n☐ Important Notice: If you have experienced a change in your financial circumstances as a result of the COVID State of Emergency,\n\n|   | 12 MONTH LEVEL PAYMENT PLAN (LPP) |  |   |\n| --- | --- | --- | --- |\n|  Month | LPP Billed | Actual Billed | Difference  |\n|   | To Date | To Date | After Payment  |\n|  01 | $150.65 | $150.65 | $157.17  |\n\nPlease pay the TOTAL AMOUNT DUE shown $150.65\n\nQuestions? Contact Us: conEd.com/ContactUs 1-800-404-9097 or 1-800-752-6633\n\n|  ConEdison | PO Box 4120  |\n| --- | --- |\n|   | NEW YORK, NY 10003  |\n\n|  Your Energy Bill |   |\n| --- | --- |\n|  |   |\n\nRENEE MARIA MONTOYA 321 GOTHAM AVE TRENTON, NJ 08666\n\n|  Account Number: 60-4213-9784-0147-2 | |\n| --- | --- |\n|  Pay By | |\n|  02/20/24 | |\n|  Amount | |\n|  Enclosed | |\n\n☐ Enroll in Auto Pay Please make checks payable to Con Edison.\n\n|  ConEdison | PO BOX 4120  |\n| --- | --- |\n|   | NEW YORK, NY 10003  |\n\n4698052 1214 604213978401472 84951600215 16980542700",
+            "images": [],
+            "dimensions": {
+                "dpi": 200,
+                "height": 2400,
+                "width": 1800
+            }
+        }
+    ],
+    "model": "mistral-ocr-2505-completion",
+    "document_annotation": "{\n  \"document_type\": \"Energy Bill\",\n  \"issued_by\": \"Con Edison\",\n  \"date\": \"02/20/2024\",\n  \"name\": \"Renee Maria Montoya\",\n  \"address\": \"321 Gotham Avenue, Trenton, NJ 08666\",\n  \"valid_document\": true\n}",
+    "usage_info": {
+        "pages_processed": 1,
+        "doc_size_bytes": 2719166
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "results": [
+        {"label": "Name", "value": "Renee Maria Montoya"},
+        {"label": "Date of Birth", "value": "01-01-1968"},
+        {"label": "Address", "value": "321 Gotham Avenue, Trenton, NJ 08666", "warning": "Address has changed since last update"},
+        {"label": "Phone", "value": "201 467 3812"},
+        {"label": "Email", "value": "r.m.montoya@gmail.com"},
+        {"label": "ID", "value": "M6454 64774 51685"},
+        {"label": "Account number", "value": "5515 6792 13"},
+        {"label": "Gender", "value": "F"},
+        {"label": "Height", "value": "5' - 08"},
+        {"label": "Nationality", "value": "American", "external": true},
+        {"label": "Marital status", "value": "Married", "external": true},
+        {"label": "Occupation", "value": "Teacher", "external": true}
+    ]
+}
