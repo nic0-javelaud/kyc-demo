@@ -11,7 +11,7 @@
 	let { children } = $props();
 </script>
 <svelte:head>
-  <link rel="icon" href="favicon.png" />
+  <link rel="icon" href="/favicon.svg" />
   <title>Mistral | {config.company.name}</title>
 </svelte:head>
 

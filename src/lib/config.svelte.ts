@@ -9,7 +9,7 @@ export const config = $state({
     },
     company: {
         name: "Pinnacle Bank",
-        color: "#111111",
+        color: "#021535",
         logo: "/pinnacle_logo.png",
     },
     user: {
