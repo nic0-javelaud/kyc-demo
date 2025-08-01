@@ -1,3 +1,4 @@
+import { FileCheck2 } from "@lucide/svelte";
 import BookOpenIcon from "@lucide/svelte/icons/book-open";
 import BotIcon from "@lucide/svelte/icons/bot";
 import Settings2Icon from "@lucide/svelte/icons/settings-2";
@@ -162,4 +163,18 @@ export const diagram = $state({
             bottom: 723 - 10 + 48
         },
     },
+});
+
+export const widgets = $state({
+    "r1c1": {
+        type: `IconBtn`,
+        id: `r1c1`,
+        step: `identification_doc`,
+        icon: FileCheck2,
+        iconExecuted: false,
+        tooltip: `Identification Document`,
+        hasAnimation: false,
+        classChange: false,
+        associatedPanel: `identification_doc`
+    }
 });

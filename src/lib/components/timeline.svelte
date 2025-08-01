@@ -19,7 +19,7 @@
 
     import IconBtn from './icon-btn.svelte';
     import ImgBtn from './img-btn.svelte';
-    import { config, diagram } from "@/config.svelte";
+    import { config, diagram, widgets } from "@/config.svelte";
     import DiagramConnector from "./diagram-connector.svelte";
 
     $effect(()=>{
@@ -32,44 +32,20 @@
 <div id="timeline" class="grid grid-cols-3 grid-rows-6 gap-x-4 gap-y-12 items-center justify-center align-middle">
     <!-- First row - Documents -->
     <div id="r1c1" class="flex items-center justify-center z-30">
-        <Tooltip.Provider delayDuration={200}>
-            <Tooltip.Root>
-                <Tooltip.Trigger>
-                    <FileCheck2 onclick={()=>state.app.right_panel = `identification_doc`} class="w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all "/>
-                </Tooltip.Trigger>
-                <Tooltip.Content>
-                    <p>Identification document</p>
-                </Tooltip.Content>
-            </Tooltip.Root>
-        </Tooltip.Provider>
+        <!-- {#each Object.entries(widgets) as [key, widget]}
+            <IconBtn id={key} onclick={()=>state.app.right_panel = widget.associatedPanel} Icon={widget.icon} IconExecuted={widget.iconExecuted} step={widget.step} classChange={widget.classChange} tooltip={widget.tooltip} animation={widget.hasAnimation} />
+        {/each} -->
+        <IconBtn id="r1c1" onclick={()=>state.app.right_panel = `identification_doc`} Icon={FileCheck2} IconExecuted={null} step="identification_doc" classChange="" tooltip="Identification document" animation={false} />
     </div>
     <DiagramConnector l={diagram.columns.c1.center} t={diagram.rows.r1.bottom} r={diagram.columns.c1.center} b={diagram.rows.r2.top} step="identification_doc_ocr" />
 
     <div id="r1c2" class="flex items-center justify-center z-30">
-        <Tooltip.Provider delayDuration={200}>
-            <Tooltip.Root>
-                <Tooltip.Trigger>
-                    <FileCheck2 onclick={()=>state.app.right_panel = `authorization_doc`} class="w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all "/>
-                </Tooltip.Trigger>
-                <Tooltip.Content>
-                    <p>Signed authorization document</p>
-                </Tooltip.Content>
-            </Tooltip.Root>
-        </Tooltip.Provider>
+        <IconBtn id="r1c1" onclick={()=>state.app.right_panel = `authorization_doc`} Icon={FileCheck2} IconExecuted={null} step="authorization_doc" classChange="" tooltip="Signed authorization document" animation={false} />
     </div>
     <DiagramConnector l={diagram.columns.c2.center} t={diagram.rows.r1.bottom} r={diagram.columns.c2.center} b={diagram.rows.r2.top} step="authorization_doc_ocr" />
 
     <div id="r1c3" class="flex items-center justify-center z-30">
-        <Tooltip.Provider delayDuration={200}>
-            <Tooltip.Root>
-                <Tooltip.Trigger>
-                    <FileCheck2 onclick={()=>state.app.right_panel = `proof_address`} class="w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all "/>
-                </Tooltip.Trigger>
-                <Tooltip.Content>
-                    <p>Proof of address</p>
-                </Tooltip.Content>
-            </Tooltip.Root>
-        </Tooltip.Provider>
+        <IconBtn id="r1c1" onclick={()=>state.app.right_panel = `proof_address`} Icon={FileCheck2} IconExecuted={null} step="proof_address" classChange="" tooltip="Proof of address" animation={false} />
     </div>
     <DiagramConnector l={diagram.columns.c3.center} t={diagram.rows.r1.bottom} r={diagram.columns.c3.center} b={diagram.rows.r2.top} step="proof_address_ocr" />
 
@@ -140,12 +116,7 @@
     <div></div>
     <!-- Seventh row - Report -->
     <div id="r7" class="flex items-center justify-center col-span-3 z-30">
-        {#if workflow.status === "completed"}
-            <ShieldAlert onclick={()=>state.app.right_panel = `llm_output`} class="relative w-12 h-12 bg-muted p-3 border-2 text-amber-500 rounded-lg cursor-pointer hover:scale-110 transition-all group-hover:text-white group-hover:bg-[#7396c3]/50 group-hover:border-white "/>
-        {:else}
-            <Shield onclick={()=>state.app.right_panel = `llm_output`} class="relative w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all group-hover:text-white group-hover:bg-[#7396c3]/50 group-hover:border-white "/>
-        {/if}
-        
+        <IconBtn id="r7c2" onclick={()=>state.app.right_panel = `llm_output`} Icon={Shield} IconExecuted={ShieldAlert} step="" classChange="text-amber-500" tooltip="Risk assessment report" onWorkflowStatus="completed" />
     </div>
 </div>
 
