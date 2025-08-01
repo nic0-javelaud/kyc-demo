@@ -27,16 +27,16 @@
     }
 
     const setDiagramConnectors = () => {
-        const c1 = document.getElementById("r2c1")?.offsetLeft;
-        const c2 = document.getElementById("r2c2")?.offsetLeft;
-        const c3 = document.getElementById("r2c3")?.offsetLeft;
+        const c1 = document.getElementById("r2c1")?.firstChild?.offsetLeft;
+        const c2 = document.getElementById("r2c2")?.firstChild?.offsetLeft;
+        const c3 = document.getElementById("r2c3")?.firstChild?.offsetLeft;
         const r1 = document.getElementById("r1c1")?.offsetTop;
         const r2 = document.getElementById("r2c1")?.offsetTop;
         const r3 = document.getElementById("r3c1")?.offsetTop;
         const r4 = document.getElementById("r4c2")?.offsetTop;
         const r5 = document.getElementById("r5c1")?.offsetTop;
-        const r6 = document.getElementById("r6")?.offsetTop;
-        const r7 = document.getElementById("r7")?.offsetTop;
+        const r6 = document.getElementById("r6c2")?.offsetTop;
+        const r7 = document.getElementById("r7c2")?.offsetTop;
         console.log(`c1: ${c1}, c2: ${c2}, c3: ${c3}, r1: ${r1}, r2: ${r2}, r3: ${r3}, r4: ${r4}, r5: ${r5}, r6: ${r6}, r7: ${r7}`);
 
         diagram.columns = { 
@@ -109,9 +109,8 @@
         }, 1000);
         setDiagramConnectors();
     });
-    $effect(() => {
-        console.log(config.company.color);
-    });
+    // $effect(() => {
+    // });
 
 </script>
 

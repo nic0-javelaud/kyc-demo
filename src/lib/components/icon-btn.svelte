@@ -10,9 +10,9 @@
         <Tooltip.Trigger>
             <div {id} class="flex items-center justify-center z-30">
                 {#if (onWorkflowStatus && workflow.status == onWorkflowStatus)}
-                    <IconExecuted {onclick} class="{classChange ? classChange : ""} relative w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all "/>
+                    <IconExecuted {onclick} class="{classChange ? classChange : ""} relative w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all z-30"/>
                 {:else if !onWorkflowStatus && (IconExecuted && workflow.history.includes(step)) }
-                    <IconExecuted {onclick} class="{classChange ? classChange : ""} relative w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all "/>
+                    <IconExecuted {onclick} class="{classChange ? classChange : ""} relative w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all z-30"/>
                 {:else}
                     <Icon {onclick} class="z-30 relative w-12 h-12 bg-muted p-3 border-2 rounded-lg cursor-pointer hover:scale-110 transition-all "/>
                 {/if}

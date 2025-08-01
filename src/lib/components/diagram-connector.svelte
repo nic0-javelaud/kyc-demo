@@ -6,7 +6,7 @@
 </script>
 
 <svg class="absolute w-screen h-screen z-0">
-    <line x1={l} y1={t} x2={r} y2={b } class:completed={workflow.history.includes(step)} class="stroke-slate-200" stroke-width="6"/>
+    <line x1={l} y1={t} x2={r} y2={b } class:completed={workflow.history.includes(step)} class="stroke-slate-200 z-0" stroke-width="6"/>
 </svg>
 
 <style >
